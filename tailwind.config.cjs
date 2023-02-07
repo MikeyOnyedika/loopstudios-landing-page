@@ -36,7 +36,7 @@ module.exports = {
       "hero-desktop": "url('./assets/images/desktop/image-hero.jpg')",
       "deep-earth-mobile": "url('./assets/images/mobile/image-deep-earth.jpg')",
       "deep-earth-desktop": "url('./assets/images/desktop/image-deep-earth.jpg')",
-      "night-arcade-mobile": "url('./assets/images/mobile/image-night-arcade.jpg')",
+      "night-arcade-mobile": "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('./assets/images/mobile/image-night-arcade.jpg')",
       "night-arcade-desktop": "url('./assets/images/desktop/image-night-arcade.jpg')",
       "soccer-team-mobile": "url('./assets/images/mobile/image-soccer-team.jpg')",
       "soccer-team-desktop": "url('./assets/images/desktop/image-soccer-team.jpg')",

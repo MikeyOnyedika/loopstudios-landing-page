@@ -11,7 +11,7 @@ const App = () => {
         <Header />
         <Hero />
       </div>
-      <main className='bg-white px-5 py-[7rem]'>
+      <main className='bg-white'>
         <CompanyPitch />
         <Creations />
       </main>
