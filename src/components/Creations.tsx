@@ -1,3 +1,4 @@
+import { SeeAllBtn } from "./SeeAllBtn"
 
 const Creations = () => {
   const creations = [
@@ -62,29 +63,55 @@ const Creations = () => {
     }
   ]
   return (
-    <section className="py-11 flex flex-col gap-5">
-      <h2 className="text-gray-dark uppercase font-sans-lg text-lg text-center">
-        Our creations
-      </h2>
-
-      <div className="text-white text-md grid grid-cols-1 gap-5 p-5 font-sans-lg uppercase">
-        {creations.map(item => (
-          <div key={item.id} className={`bg-${item.mobile} lg:bg-${item.desktop} w-full aspect-[16/6] bg-no-repeat bg-cover
-         flex  items-center justify-start text-sans-lg px-1 leading-none`}>
-            <div className="flex flex-col mx-[5%] mt-[10%]">
-              <h4  >    {item.text1}  </h4>
-              <h4 >    {item.text2}  </h4>
-            </div>
-          </div>
-        )
-        )}
+    <section className="py-11  flex flex-col gap-5 p-5">
+      <div className="flex justify-center lg:justify-between">
+        <h2 className="justify-self-center  text-gray-dark uppercase font-sans-lg text-lg text-center">
+          Our creations
+        </h2>
+        <SeeAllBtn hiddenOnMobile={true} />
       </div>
 
-      <button className="uppercase font-sans-sm tracking-[0.3em] border-2 self-center py-2 px-10 border-gray-dark" 
-      >See all</button>
+      <div className="text-white  text-md grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-5  font-sans-lg uppercase">
+        <div className="bg-deep-earth-mobile lg:bg-deep-earth-desktop     aspect-[16/6] bg-no-repeat bg-cover flex  items-center justify-start text-sans-lg px-1 leading-none">
+          <div className="flex flex-col mx-[5%] mt-[10%]">
+            <h4>deep</h4>
+            <h4>earth</h4>
+          </div>
+        </div>
+        <div className="bg-night-arcade-mobile lg:bg-night-arcade-desktop  lg:w-1/4 lg:aspect-auto aspect-[16/6] bg-no-repeat bg-cover
+         flex  items-center justify-start text-sans-lg px-1 leading-none">
+          <div className="flex flex-col mx-[5%] mt-[10%]">
+            <h4>night</h4>
+            <h4>arcade</h4>
+          </div>
+        </div>
+        <div className="bg-soccer-team-mobile lg:bg-soccer-team-desktop  lg:w-1/4 aspect-[16/6] bg-no-repeat bg-cover
+         flex  items-center justify-start text-sans-lg px-1 leading-none">
+          <div className="flex flex-col mx-[5%] mt-[10%]">
+            <h4>soccer</h4>
+            <h4>team vr</h4>
+          </div>
+        </div>
+        <div className="bg-grid-mobile lg:bg-grid-desktop  lg:w-1/4 aspect-[16/6] bg-no-repeat bg-cover
+         flex  items-center justify-start text-sans-lg px-1 leading-none">
+          <div className="flex flex-col mx-[5%] mt-[10%]">
+            <h4>the</h4>
+            <h4>grid</h4>
+          </div>
+        </div>
+        {/* <div className="bg-from-above-mobile lg:bg-from-above-desktop  lg:w-1/4 aspect-[16/6] bg-no-repeat bg-cover
+         flex  items-center justify-start text-sans-lg px-1 leading-none">
+          <div className="flex flex-col mx-[5%] mt-[10%]">
+            <h4>from up</h4>
+            <h4>above vr</h4>
+          </div>
+        </div> */}
+      </div>
 
+      <SeeAllBtn hiddenOnMobile={false} />
     </section>
   )
 }
 
 export default Creations
+
