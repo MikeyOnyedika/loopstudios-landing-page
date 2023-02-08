@@ -5,12 +5,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    color: {
+    colors: {
       white: "hsl(0, 0%, 100%)",
       black: "hsl(0, 0%, 0%)",
       gray: {
-        DEFAULT: "hsl(0, 0%, 55%)",
-        dark: "hsl(0, 0%, 41%)"
+        DEFAULT: "#8c8c8c",
+        dark: "#696969"
       }
     },
     fontSize: {
@@ -24,10 +24,6 @@ module.exports = {
     fontFamily: {
       "sans-lg": ['Josefin Sans', 'sans-serif'],
       "sans-sm": ['Alata', 'sans-serif']
-    },
-    fontWeight: {
-      "light": "300",
-      "regular": "400"
     },
     backgroundImage: {
       "hero-mobile": "url('./assets/images/mobile/image-hero.jpg')",
