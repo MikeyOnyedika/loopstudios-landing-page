@@ -1,14 +1,14 @@
+import { FC } from "react"
 import HamburgerIcon from "../assets/images/icon-hamburger.svg"
 import logo from '../assets/images/logo.svg'
-const Header = () => {
+const Header: FC<{ openMobileMenu: () => void }> = ({ openMobileMenu }) => {
     return (
         <header className="flex justify-between items-center w-full">
-            {/* <a className="font-sans-sm font-normal text-md ">
-                loopstudios
-            </a> */}
-            <img src={logo} alt="" className="h-[1.5rem]"/>
+            <img src={logo} alt="" className="h-[1.5rem]" />
             <div className="flex">
-                <img src={HamburgerIcon} alt="hamburger" className=" lg:hidden " />
+                <button onClick={openMobileMenu} className=" lg:hidden ">
+                    <img src={HamburgerIcon} alt="hamburger" />
+                </button>
                 <nav className=" hidden lg:block ">
                     <ul className="flex gap-2">
                         <li>
