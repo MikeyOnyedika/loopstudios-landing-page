@@ -63,15 +63,15 @@ const Creations = () => {
     }
   ]
   return (
-    <section className="py-11  flex flex-col gap-5 p-5">
+    <section className="flex flex-col gap-5">
       <div className="flex justify-center lg:justify-between">
-        <h2 className="justify-self-center  text-gray-dark uppercase font-sans-lg text-lg text-center">
+        <h2 className="justify-self-center  text-black uppercase font-sans-lg text-md lg:text-lg text-center">
           Our creations
         </h2>
         <SeeAllBtn hiddenOnMobile={true} />
       </div>
 
-      <div className="text-white  text-md grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-5  font-sans-lg uppercase">
+      <div className="text-white text-sm lg:text-md grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-5  font-sans-lg uppercase">
         <div className="bg-deep-earth-mobile lg:bg-deep-earth-desktop     aspect-[16/6] bg-no-repeat bg-cover flex  items-center justify-start text-sans-lg px-1 leading-none">
           <div className="flex flex-col mx-[5%] mt-[10%]">
             <h4>deep</h4>

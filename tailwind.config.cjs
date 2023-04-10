@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require("tailwindcss/defaultTheme")
+
 module.exports = {
   content: [
     "./index.html",
@@ -6,7 +9,7 @@ module.exports = {
   ],
   theme: {
     colors: {
-      white: "hsl(0, 0%, 100%)",
+      white: "hsl(0, 0%, 90%)",
       black: "hsl(0, 0%, 0%)",
       gray: {
         DEFAULT: "#8c8c8c",
@@ -14,12 +17,14 @@ module.exports = {
       }
     },
     fontSize: {
-      "body-copy": "0.938rem",
+      "body-copy": ["0.938rem", "30px"],
       "base": "1rem",
       "sm": ["1.35rem", "20px"],
-      "md": "1.625rem",
+      "md": ["1.625rem", "30px"],
       "lg": ["1.94rem", "35px"],
-      "xl": ["2.58rem", "40px"]
+      "xl": ["2.58rem", "40px"],
+      "2xl": ["3.3rem", "56px"],
+      "3xl": ["4.1rem", "65px"],
     },
     fontFamily: {
       "sans-lg": ['Josefin Sans', 'sans-serif'],
@@ -47,10 +52,24 @@ module.exports = {
       "interactive-mobile": "url('./assets/images/mobile/image-interactive.jpg')",
       "interactive-desktop": "url('./assets/images/desktop/image-interactive.jpg')",
     },
-    extend: {},
+    screens: {
+      ...defaultTheme.screens,
+      'sm': '360px',
+    },
+    extend: {
+      maxWidth: {
+        'max': '1220px',
+        'hero-text': '600px'
+      },
+      gridTemplateColumns: {
+        'pitch': '5fr 4fr'
+      }
+    },
   },
   safelist: [
 
   ],
   plugins: [],
 }
+
+console.log(module.exports.theme.screens)
