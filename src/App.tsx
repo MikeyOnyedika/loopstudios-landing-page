@@ -11,12 +11,12 @@ const App = () => {
 
   return (
     <>
-      <div className='bg-hero-mobile lg:bg-hero-desktop text-white bg-cover bg-no-repeat h-screen md:h-fit flex flex-col items-center  w-full px-5 py-8 md:px-32'>
+      <div className='bg-hero-mobile lg:bg-hero-desktop text-white bg-cover bg-no-repeat h-screen md:h-fit flex flex-col items-center  w-full px-5 py-8 md:p-12 lg:p-20'>
         <Header openMobileMenu={() => setShowMobileMenu(true)} />
         <Hero />
       </div>
       <MobileMenu show={showMobileMenu} closeMobileMenu={() => setShowMobileMenu(false)} />
-      <main className='bg-white flex flex-col gap-10 px-5 py-20 md:p-12  lg:p-20 lg:items-center'>
+      <main className='bg-white flex flex-col gap-10 lg:gap-36 px-5 py-20 md:p-12 lg:py-36 lg:p-20 lg:items-center'>
         <CompanyPitch />
         <Creations />
       </main>

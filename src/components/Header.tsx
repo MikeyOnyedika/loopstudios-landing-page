@@ -3,13 +3,13 @@ import HamburgerIcon from "../assets/images/icon-hamburger.svg"
 import logo from '../assets/images/logo.svg'
 const Header: FC<{ openMobileMenu: () => void }> = ({ openMobileMenu }) => {
     return (
-        <header className="flex justify-between items-center w-full font-sans-sm max-w-max lg:pt-8">
+        <header className="flex justify-between items-center w-full font-sans-sm ">
             <img src={logo} alt="" className="h-[1.5rem]" />
             <div className="flex">
-                <button onClick={openMobileMenu} className=" lg:hidden ">
+                <button onClick={openMobileMenu} className=" md:hidden ">
                     <img src={HamburgerIcon} alt="hamburger" />
                 </button>
-                <nav className=" hidden lg:block ">
+                <nav className=" hidden md:block ">
                     <ul className="flex gap-2 lg:gap-8">
                         <li>
                             <a href="#">About</a>
