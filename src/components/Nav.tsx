@@ -21,7 +21,7 @@ export const Nav: FC<{ className: string, listClassName: string, listItem?: stri
         {
             id: 5,
             title: "Support"
-        },
+        }
     ]
 
     return (
