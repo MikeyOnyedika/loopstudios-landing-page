@@ -1,7 +1,7 @@
 import { SeeAllBtn } from "./SeeAllBtn"
 
 const Creations = () => {
-  const gridItem = `aspect-[16/6] lg:aspect-[9/16] lg:justify-between bg-no-repeat bg-cover lg:bg-contain flex  items-end justify-start text-sans-lg px-1 leading-none h-max`
+  const gridItem = `aspect-[16/6] lg:aspect-[9/16] lg:justify-between bg-no-repeat bg-cover lg:bg-contain flex  items-end justify-start text-sans-lg px-1 leading-none h-max cursor-pointer hover:bg-blend-screen hover:text-black transition-colors bg-gray`
 
   const gridTextWrapper = `flex p-5 lg:p-9`
 

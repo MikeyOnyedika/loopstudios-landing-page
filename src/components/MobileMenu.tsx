@@ -10,7 +10,7 @@ export const MobileMenu: FC<{ show: boolean, closeMobileMenu: () => void }> = ({
                     <img src={close} alt="" className="h-[1.5rem]" />
                 </button>
             </div>
-            <Nav className="h-full flex items-center" listClassName="flex flex-col font-sans-lg  items-start gap-5" listItem="text-gray uppercase text-sm" />
+            <Nav className="h-full flex items-center" listClassName="flex flex-col font-sans-lg  items-start gap-5" listItem="text-gray uppercase text-sm hover:text-white"/>
         </aside>
     )
 }

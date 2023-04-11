@@ -29,7 +29,7 @@ export const Nav: FC<{ className: string, listClassName: string, listItem?: stri
             <ul className={listClassName}>
                 {
                     list.map(item => (
-                        <li key={item.id} className={`${listItem || "" } cursor-pointer hover:font-bold`}>
+                        <li key={item.id} className={`${listItem || "" } cursor-pointer flex flex-col gap-1 after:content-[""] after:w-1/2 after:h-[2px] after:bg-white items-center after:opacity-0 hover:after:opacity-100 transition-opacity`}>
                             {item.title}
                         </li>
                     ))
