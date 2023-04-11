@@ -43,7 +43,7 @@ Users should be able to:
 ![Mobile View](./src/assets/final/mobile.png)
 
 ### Links
-- Live Site URL: [https://loopstudios-landing-page-drab-delta.vercel.app/Add solution URL here](https://loopstudios-landing-page-drab-delta.vercel.app/)
+- Live Site URL: [https://loopstudios-landing-page-drab-delta.vercel.app/](https://loopstudios-landing-page-drab-delta.vercel.app/)
 - Github repo URL: [https://github.com/MikeyOnyedika/loopstudios-landing-page](https://github.com/MikeyOnyedika/loopstudios-landing-page)
 
 <br/>
