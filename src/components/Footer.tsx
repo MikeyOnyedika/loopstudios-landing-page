@@ -10,7 +10,7 @@ const Footer = () => (
     <div className='max-w-max text-white grid w-full grid-cols-1 lg:grid-cols-2 justify-center px-5 py-16 gap-10'>
       <div className='flex flex-col items-center lg:items-start gap-3'>
         <img src={logo} alt="loopstudios" className="h-[1.5rem] justify-self-center" />
-        <Nav className="justify-self-center" listClassName="font-sans-sm text-gray-dark flex-col lg:flex-row gap-5 text-body-copy" />
+        <Nav className="justify-self-center" listClassName="font-sans-sm text-gray-dark flex flex-col lg:flex-row gap-5 text-body-copy" />
       </div>
       <div className="flex flex-col gap-5 items-center lg:items-end">
         <div className='flex gap-4 justify-center'>

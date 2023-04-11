@@ -7,29 +7,29 @@ export const Nav: FC<{ className: string, listClassName: string, listItem?: stri
             title: "About"
         },
         {
-            id: 1,
+            id: 2,
             title: "Careers"
         },
         {
-            id: 1,
+            id: 3,
             title: "Events"
         },
         {
-            id: 1,
+            id: 4,
             title: "Products"
         },
         {
-            id: 1,
+            id: 5,
             title: "Support"
         },
     ]
 
     return (
         <nav className={className}>
-            <ul className={listClassName + "  flex "}>
+            <ul className={listClassName}>
                 {
                     list.map(item => (
-                        <li key={item.id} className={listItem || ""}>
+                        <li key={item.id} className={`${listItem || "" } cursor-pointer hover:font-bold`}>
                             {item.title}
                         </li>
                     ))

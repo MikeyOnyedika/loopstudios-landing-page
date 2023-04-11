@@ -8,7 +8,7 @@ import { useState } from 'react'
 
 const App = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
-
+// 
   return (
     <>
       <div className='bg-hero-mobile lg:bg-hero-desktop text-white bg-cover bg-no-repeat h-screen md:h-fit flex flex-col items-center  w-full px-5 py-8 md:p-12 lg:p-20'>
